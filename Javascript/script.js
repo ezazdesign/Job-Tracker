@@ -117,7 +117,7 @@ emptyStateDiv.className =
     "hidden flex-col items-center justify-center py-10 text-center";
 emptyStateDiv.innerHTML = `
  <div class="flex flex-col items-center justify-center mx-auto bg-white rounded-lg shadow-sm border border-gray-200 p-6 w-full py-[111px]">
-    <img src="../jobs.png" alt="No jobs" class="w-16 h-16 mb-4 opacity-50">
+    <img src="./jobs.png" alt="No jobs" class="w-16 h-16 mb-4 opacity-50">
     <h3 class="text-lg font-bold text-[#002C5C]">No jobs available</h3>
     <p class="text-[#64748B] text-sm mt-1">Check back later for new job opportunities.</p>
   </div>
