@@ -33,7 +33,7 @@
   </style>
 </head>
 
-<body class="bg-[#F8FAFC] h-screen">
+<body class="bg-[#F8FAFC] ">
   <header class="container mx-auto">
     <h1 class="text-[32px] font-bold pt-14 pb-5 md:text-start text-center text-[#002C5C]">
       Job Application Tracker
@@ -68,21 +68,22 @@
       </div>
     </div>
 
-    <!-- Button -->
-    <div class="flex items-center gap-3 mb-5">
+    <!-- Button all-interview-rejected -->
+    <div class="flex items-center gap-3 mb-5 md:justify-start justify-center">
       <button class="btn btn-primary font-semibold text-sm w-20" id="">All</button>
       <button class="btn font-semibold text-sm" id="">Interview</button>
       <button class="btn font-semibold text-sm" id="rejectedCount">Rejected</button>
     </div>
-    
-    <!-- Job Cards -->
-    <div id="job-container">
-      <div class="mx-auto bg-white rounded-lg shadow-sm border border-gray-200 p-6">
 
+    <!-- Job Cards Start-->
+    <div id="job-container" class="space-y-6">
+
+      <!-- Card 1 -->
+      <div class="mx-auto bg-white rounded-lg shadow-sm border border-gray-200 p-6">
         <!-- Job Title -->
         <div class="flex justify-between items-start">
           <div>
-            <h2 class="text-lg font-semibold text-[#002C5C]">Mobile First React Developer</h2>
+            <h2 class="text-lg font-semibold text-[#002C5C]">Dynamic Megasoft Limited</h2>
             <p class="text-base text-[#64748B] mt-1">React Native Developer</p>
             <p class="text-sm text-[#64748B] mt-5">
               Remote • Full-time • $130,000 - $175,000
@@ -93,12 +94,14 @@
           </button>
         </div>
 
-       
+        <!-- NOT APPLIED -->
         <div class="mt-5">
-          <p class="roundedtext-xs font-medium px-3 py-2 rounded-md bg-[#EEF4FF] text-[#002C5C] w-[113px] text-sm font-medium">
+          <p
+            class="roundedtext-xs font-medium px-3 py-2 rounded-md bg-[#EEF4FF] text-[#002C5C] w-[113px] text-sm font-medium">
             NOT APPLIED
           </p>
         </div>
+
         <p class="mt-2 text-sm text-[#323B49]">
           Build cross-platform mobile applications using React Native.
           Work on products used by millions of users worldwide.
@@ -106,17 +109,318 @@
 
         <!-- Buttons -->
         <div class="mt-5 flex gap-3">
-          <button id="" class="px-4 py-2 text-sm font-semibold rounded border border-green-500 text-green-600 hover:bg-green-50">
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-green-500 text-green-600 hover:bg-green-50 cursor-pointer">
             INTERVIEW
           </button>
-          <button id="" class="px-4 py-2 text-sm font-semibold rounded border border-red-500 text-red-600 hover:bg-red-50">
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-red-500 text-red-600 hover:bg-red-50 cursor-pointer">
             REJECTED
           </button>
         </div>
-
-
       </div>
 
+      <!-- Card 2 -->
+      <div class="mx-auto bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        <!-- Job Title -->
+        <div class="flex justify-between items-start">
+          <div>
+            <h2 class="text-lg font-semibold text-[#002C5C]">WebFlow Agency</h2>
+            <p class="text-base text-[#64748B] mt-1">Web Designer & Developer</p>
+            <p class="text-sm text-[#64748B] mt-5">
+              Los Angeles, CA
+              •
+              Part-time
+              •
+              $80,000 - $120,000 </p>
+          </div>
+          <button class="border py-[2px] px-[6px] rounded-full hover:bg-gray-100 text-[#64748B]  ">
+            <i class="fa-solid fa-trash-can text-sm "></i>
+          </button>
+        </div>
+
+        <!-- NOT APPLIED -->
+        <div class="mt-5">
+          <p
+            class="roundedtext-xs font-medium px-3 py-2 rounded-md bg-[#EEF4FF] text-[#002C5C] w-[113px] text-sm font-medium">
+            NOT APPLIED
+          </p>
+        </div>
+
+        <p class="mt-2 text-sm text-[#323B49]">
+          Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web
+          design trends.
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-5 flex gap-3">
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-green-500 text-green-600 hover:bg-green-50 cursor-pointer">
+            INTERVIEW
+          </button>
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-red-500 text-red-600 hover:bg-red-50 cursor-pointer">
+            REJECTED
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="mx-auto bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        <!-- Job Title -->
+        <div class="flex justify-between items-start">
+          <div>
+            <h2 class="text-lg font-semibold text-[#002C5C]">DataViz Solutions</h2>
+            <p class="text-base text-[#64748B] mt-1">Data Analyst & Developer</p>
+            <p class="text-sm text-[#64748B] mt-5">
+              Boston, MA • Full-time • $125,000 - $165,000</p>
+          </div>
+          <button class="border py-[2px] px-[6px] rounded-full hover:bg-gray-100 text-[#64748B]  ">
+            <i class="fa-solid fa-trash-can text-sm "></i>
+          </button>
+        </div>
+
+        <!-- NOT APPLIED -->
+        <div class="mt-5">
+          <p
+            class="roundedtext-xs font-medium px-3 py-2 rounded-md bg-[#EEF4FF] text-[#002C5C] w-[113px] text-sm font-medium">
+            NOT APPLIED
+          </p>
+        </div>
+
+        <p class="mt-2 text-sm text-[#323B49]">
+          Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical
+          thinking.
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-5 flex gap-3">
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-green-500 text-green-600 hover:bg-green-50 cursor-pointer">
+            INTERVIEW
+          </button>
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-red-500 text-red-600 hover:bg-red-50 cursor-pointer">
+            REJECTED
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="mx-auto bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        <!-- Job Title -->
+        <div class="flex justify-between items-start">
+          <div>
+            <h2 class="text-lg font-semibold text-[#002C5C]">Appetiser Apps LLC</h2>
+            <p class="text-base text-[#64748B] mt-1">Junior Full-Stack Developer</p>
+            <p class="text-sm text-[#64748B] mt-5">
+              Dhaka, Bangladesh
+              •
+              Full-time
+              •
+              $40,000 - $50,000 </p>
+          </div>
+          <button class="border py-[2px] px-[6px] rounded-full hover:bg-gray-100 text-[#64748B]  ">
+            <i class="fa-solid fa-trash-can text-sm "></i>
+          </button>
+        </div>
+
+        <!-- NOT APPLIED -->
+        <div class="mt-5">
+          <p
+            class="roundedtext-xs font-medium px-3 py-2 rounded-md bg-[#EEF4FF] text-[#002C5C] w-[113px] text-sm font-medium">
+            NOT APPLIED
+          </p>
+        </div>
+
+        <p class="mt-2 text-sm text-[#323B49]">
+          Appetiser challenges me to give the best version of myself. I like how the company is transparent about its
+          business model and anyone can contribute with an idea for its improvement.
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-5 flex gap-3">
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-green-500 text-green-600 hover:bg-green-50 cursor-pointer">
+            INTERVIEW
+          </button>
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-red-500 text-red-600 hover:bg-red-50 cursor-pointer">
+            REJECTED
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="mx-auto bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        <!-- Job Title -->
+        <div class="flex justify-between items-start">
+          <div>
+            <h2 class="text-lg font-semibold text-[#002C5C]">
+              MH Global Group</h2>
+            <p class="text-base text-[#64748B] mt-1">Backend Software Engineer</p>
+            <p class="text-sm text-[#64748B] mt-5">
+              Chhatara, India • Part-time • $80,000 - $100,000
+            </p>
+          </div>
+          <button class="border py-[2px] px-[6px] rounded-full hover:bg-gray-100 text-[#64748B]  ">
+            <i class="fa-solid fa-trash-can text-sm "></i>
+          </button>
+        </div>
+
+        <!-- NOT APPLIED -->
+        <div class="mt-5">
+          <p
+            class="roundedtext-xs font-medium px-3 py-2 rounded-md bg-[#EEF4FF] text-[#002C5C] w-[113px] text-sm font-medium">
+            NOT APPLIED
+          </p>
+        </div>
+
+        <p class="mt-2 text-sm text-[#323B49]">
+          As a Backend Software Engineer, you will be responsible for designing, developing, and maintaining the backend
+          infrastructure for a web application.
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-5 flex gap-3">
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-green-500 text-green-600 hover:bg-green-50 cursor-pointer">
+            INTERVIEW
+          </button>
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-red-500 text-red-600 hover:bg-red-50 cursor-pointer">
+            REJECTED
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="mx-auto bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        <!-- Job Title -->
+        <div class="flex justify-between items-start">
+          <div>
+            <h2 class="text-lg font-semibold text-[#002C5C]">StepUp Agency</h2>
+            <p class="text-base text-[#64748B] mt-1">WordPress Web Developer</p>
+            <p class="text-sm text-[#64748B] mt-5">
+              Dhaka, BD • full-time • $80,000 - $120,000 </p>
+          </div>
+          <button class="border py-[2px] px-[6px] rounded-full hover:bg-gray-100 text-[#64748B]  ">
+            <i class="fa-solid fa-trash-can text-sm "></i>
+          </button>
+        </div>
+
+        <!-- NOT APPLIED -->
+        <div class="mt-5">
+          <p
+            class="roundedtext-xs font-medium px-3 py-2 rounded-md bg-[#EEF4FF] text-[#002C5C] w-[113px] text-sm font-medium">
+            NOT APPLIED
+          </p>
+        </div>
+
+        <p class="mt-2 text-sm text-[#323B49]">
+          Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web
+          design trends.
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-5 flex gap-3">
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-green-500 text-green-600 hover:bg-green-50 cursor-pointer">
+            INTERVIEW
+          </button>
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-red-500 text-red-600 hover:bg-red-50 cursor-pointer">
+            REJECTED
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="mx-auto bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        <!-- Job Title -->
+        <div class="flex justify-between items-start">
+          <div>
+            <h2 class="text-lg font-semibold text-[#002C5C]">Green Delta Insurance Company Limited</h2>
+            <p class="text-base text-[#64748B] mt-1">Frontend Developer (Angular)</p>
+            <p class="text-sm text-[#64748B] mt-5">
+              Kolkata, India • Part-time • $40,000 - $50,000
+            </p>
+          </div>
+          <button class="border py-[2px] px-[6px] rounded-full hover:bg-gray-100 text-[#64748B]  ">
+            <i class="fa-solid fa-trash-can text-sm "></i>
+          </button>
+        </div>
+
+        <!-- NOT APPLIED -->
+        <div class="mt-5">
+          <p
+            class="roundedtext-xs font-medium px-3 py-2 rounded-md bg-[#EEF4FF] text-[#002C5C] w-[113px] text-sm font-medium">
+            NOT APPLIED
+          </p>
+        </div>
+
+        <p class="mt-2 text-sm text-[#323B49]">
+          Bachelor of Science (BSc) in Computer Science / Computer Engineering / Electrical & Electronics Engineering /
+          Electronics & Communication Engineering or equivalent experience.
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-5 flex gap-3">
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-green-500 text-green-600 hover:bg-green-50 cursor-pointer">
+            INTERVIEW
+          </button>
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-red-500 text-red-600 hover:bg-red-50 cursor-pointer">
+            REJECTED
+          </button>
+        </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="mx-auto bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        <!-- Job Title -->
+        <div class="flex justify-between items-start">
+          <div>
+            <h2 class="text-lg font-semibold text-[#002C5C]">Therap (BD) Ltd.</h2>
+            <p class="text-base text-[#64748B] mt-1">Flutter Developer</p>
+            <p class="text-sm text-[#64748B] mt-5">Dhaka, BD • full-time • $30,000 - $45,000</p>
+          </div>
+          <button class="border py-[2px] px-[6px] rounded-full hover:bg-gray-100 text-[#64748B]  ">
+            <i class="fa-solid fa-trash-can text-sm "></i>
+          </button>
+        </div>
+
+        <!-- NOT APPLIED -->
+        <div class="mt-5">
+          <p
+            class="roundedtext-xs font-medium px-3 py-2 rounded-md bg-[#EEF4FF] text-[#002C5C] w-[113px] text-sm font-medium">
+            NOT APPLIED
+          </p>
+        </div>
+
+        <p class="mt-2 text-sm text-[#323B49]">
+          Proven experience as a Flutter Developer with a strong portfolio of mobile applications developed using
+          Flutter
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-5 flex gap-3">
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-green-500 text-green-600 hover:bg-green-50 cursor-pointer">
+            INTERVIEW
+          </button>
+          <button id=""
+            class="px-4 py-2 text-sm font-semibold rounded border border-red-500 text-red-600 hover:bg-red-50 cursor-pointer">
+            REJECTED
+          </button>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    </div>
 
 
 
