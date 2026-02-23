@@ -48,8 +48,8 @@ cards.forEach(function (card) {
         statusBadge.innerText = "INTERVIEW";
         statusBadge.className =
             "rounded font-medium px-3 py-2 bg-green-100 text-green-700 w-fit text-sm";
+            card.style.borderLeft = "6px solid #10B981";
         updateUI();
-        card.style.borderLeft = "6px solid #10B981";
     });
 
     // REJECTED BUTTON
@@ -58,8 +58,8 @@ cards.forEach(function (card) {
         statusBadge.innerText = "REJECTED";
         statusBadge.className =
             "rounded font-medium px-3 py-2 bg-red-100 text-red-700 w-fit text-sm";
+            card.style.borderLeft = "6px solid #EF4444";
         updateUI();
-        card.style.borderLeft = "6px solid #EF4444";
     });
 
     // DELETE BUTTON
