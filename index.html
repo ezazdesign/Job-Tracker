@@ -1,112 +1,143 @@
 <!doctype html>
 <html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job-Tracker</title>
 
-    <!-- Link Css -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job-Tracker</title>
 
-    <!-- Fav Icon -->
-    <link rel="shortcut icon" href="./jobs.png" type="image/x-icon" />
+  <!-- Link Css -->
 
-    <!-- Google Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Fav Icon -->
+  <link rel="shortcut icon" href="./jobs.png" type="image/x-icon" />
 
-    <!-- Link daisyUI and Tailwindcss -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Google Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
 
-    <!-- Link FontAwesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Link daisyUI and Tailwindcss -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Internal CSS -->
-    <style>
-      * {
-        font-family: "Geist", sans-serif;
-      }
-    </style>
-  </head>
+  <!-- Link FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body class="bg-[#F8FAFC] h-screen">
-    <header class="container mx-auto">
-      <h1 class="text-[32px] font-bold pt-14 pb-5 md:text-start text-center text-[#002C5C]">
-        Job Application Tracker
-      </h1>
-      <!-- Dashboard -->
-      <div class="dashboard-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
-        <div
-          class="dashboard-card rounded-lg border border-[#F1F2F4] bg-white p-5 space-y-2 hover:border-green-600"
-        >
-          <h3 class="text-[#323B49] text-sm font-medium">Total</h3>
-          <p id="totalCount" class="font-bold text-2xl text-[#002C5C]">8</p>
-        </div>
-        <div
-          class="dashboard-card rounded-lg border border-[#F1F2F4] bg-white p-5 space-y-2 hover:border-green-600"
-        >
-          <h3 class="text-[#323B49] text-sm font-medium">Interview</h3>
-          <p id="interviewCount" class="font-bold text-2xl text-[#10B981]">0</p>
-        </div>
-        <div
-          class="dashboard-card rounded-lg border border-[#F1F2F4] bg-white p-5 space-y-2 hover:border-green-600"
-        >
-          <h3 class="text-[#323B49] text-sm font-medium">Rejected</h3>
-          <p id="rejectedCount" class="font-bold text-2xl text-[#EF4444]">0</p>
-        </div>
+  <!-- Internal CSS -->
+  <style>
+    * {
+      font-family: "Geist", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-[#F8FAFC] h-screen">
+  <header class="container mx-auto">
+    <h1 class="text-[32px] font-bold pt-14 pb-5 md:text-start text-center text-[#002C5C]">
+      Job Application Tracker
+    </h1>
+    <!-- Dashboard -->
+    <div class="dashboard-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
+      <div class="dashboard-card rounded-lg border border-[#F1F2F4] bg-white p-5 space-y-2 hover:border-green-600">
+        <h3 class="text-[#323B49] text-sm font-medium">Total</h3>
+        <p id="totalCount" class="font-bold text-2xl text-[#002C5C]">8</p>
       </div>
-    </header>
-
-    <hr class="container mx-auto border border-[#e7e7e9] my-8" />
-
-    <!-- Available Jobs Section -->
-    <main class="container mx-auto">
-      <div class="flex items-center justify-between mb-6">
-        <div>
-          <h3 class="font-semibold text-xl text-[#002C5C]">Available Jobs</h3>
-        </div>
-        <div>
-          <p class="font-medium text-base text-[#64748B]">8 jobs</p>
-        </div>
+      <div class="dashboard-card rounded-lg border border-[#F1F2F4] bg-white p-5 space-y-2 hover:border-green-600">
+        <h3 class="text-[#323B49] text-sm font-medium">Interview</h3>
+        <p id="interviewCount" class="font-bold text-2xl text-[#10B981]">0</p>
       </div>
-
-      <!-- Button -->
-      <div class="flex items-center gap-3">
-        <button class="btn btn-primary font-semibold text-sm w-20" id="">All</button>
-        <button class="btn font-semibold text-sm" id="">Interview</button>
-        <button class="btn font-semibold text-sm" id="">Rejected</button>
+      <div class="dashboard-card rounded-lg border border-[#F1F2F4] bg-white p-5 space-y-2 hover:border-green-600">
+        <h3 class="text-[#323B49] text-sm font-medium">Rejected</h3>
+        <p id="rejectedCount" class="font-bold text-2xl text-[#EF4444]">0</p>
       </div>
+    </div>
+  </header>
 
-      <!-- Job Cards -->
-       <div id="job-container">
+  <hr class="container mx-auto border border-[#e7e7e9] my-8" />
 
-       </div>
+  <!-- Available Jobs Section -->
+  <main class="container mx-auto">
+    <div class="flex items-center justify-between mb-6">
+      <div>
+        <h3 class="font-semibold text-xl text-[#002C5C]">Available Jobs</h3>
+      </div>
+      <div>
+        <p class="font-medium text-base text-[#64748B]">8 jobs</p>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="flex items-center gap-3 mb-5">
+      <button class="btn btn-primary font-semibold text-sm w-20" id="">All</button>
+      <button class="btn font-semibold text-sm" id="">Interview</button>
+      <button class="btn font-semibold text-sm" id="rejectedCount">Rejected</button>
+    </div>
+    
+    <!-- Job Cards -->
+    <div id="job-container">
+      <div class="mx-auto bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+
+        <!-- Job Title -->
+        <div class="flex justify-between items-start">
+          <div>
+            <h2 class="text-lg font-semibold text-[#002C5C]">Mobile First React Developer</h2>
+            <p class="text-base text-[#64748B] mt-1">React Native Developer</p>
+            <p class="text-sm text-[#64748B] mt-5">
+              Remote • Full-time • $130,000 - $175,000
+            </p>
+          </div>
+          <button class="border py-[2px] px-[6px] rounded-full hover:bg-gray-100 text-[#64748B]  ">
+            <i class="fa-solid fa-trash-can text-sm "></i>
+          </button>
+        </div>
 
        
-    </main>
-    <!-- Link Js -->
+        <div class="mt-5">
+          <p class="roundedtext-xs font-medium px-3 py-2 rounded-md bg-[#EEF4FF] text-[#002C5C] w-[113px] text-sm font-medium">
+            NOT APPLIED
+          </p>
+        </div>
+        <p class="mt-2 text-sm text-[#323B49]">
+          Build cross-platform mobile applications using React Native.
+          Work on products used by millions of users worldwide.
+        </p>
 
-    <script src="./Javascript/script.js"></script>
-  </body>
+        <!-- Buttons -->
+        <div class="mt-5 flex gap-3">
+          <button id="" class="px-4 py-2 text-sm font-semibold rounded border border-green-500 text-green-600 hover:bg-green-50">
+            INTERVIEW
+          </button>
+          <button id="" class="px-4 py-2 text-sm font-semibold rounded border border-red-500 text-red-600 hover:bg-red-50">
+            REJECTED
+          </button>
+        </div>
 
-  <!-- Footer Section -->
-  <footer>
-    <div class="text-center py-8 text-sm text-gray-600">
-      <p>&copy; 2026 Ezaz Ahmed. All rights reserved by Job-Tracker</p>
-    </div>
-  </footer>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+  <!-- Link Js -->
+
+  <script src="./Javascript/script.js"></script>
+</body>
+
+<!-- Footer Section -->
+<footer>
+  <div class="text-center py-8 text-sm text-gray-600">
+    <p>&copy; 2026 Ezaz Ahmed. All rights reserved by Job-Tracker</p>
+  </div>
+</footer>
+
 </html>
